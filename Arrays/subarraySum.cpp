@@ -1,10 +1,21 @@
 #include<bits/stdc++.h>
 using namespace std;
-int* subarray_sum(int arr[],int size){
-
-
-return arr;
+//Kadane's Algorithm VVIIP
+long long subarray_sum(int arr[],int size){
+ long long Sum=0;
+ long long max=arr[0];
+ for(int i=0;i<size;i++){
+     Sum=0;
+  for(int j=i;j<size;j++){
+      Sum+=arr[j];
+      if(Sum>max)
+      max=Sum;
+  }
+ }
+ return max;
 }
+
+
 int main(){
 #ifndef ONLINE_JUDGE
     // for getting input from input.txt
@@ -12,19 +23,19 @@ int main(){
     // for writing output to output.txt
     freopen("output.txt", "w", stdout);
 #endif
-int N;
-cout<<"Enter the siz of the array";
-cin>>N;
-int arr[N];
+int N,testcases;
+cin>>testcases;
+while(testcases!=0)
+{
+    cin>>N;
+    int arr[N];
 for(int i=0;i<N;i++){
     cin>>arr[i];
 }
-int* p;
+long long p;
 p=subarray_sum(arr,N);
-cout<<"The rotated array is :- "<<endl;
-for(int i=0;i<N;i++){
-    cout<<p[i]<<" ";
+cout<<"The max Subarray array Sum is of test case "<<testcases<<" is:-" <<p<<endl;
+testcases--;
 }
-delete[] p;
 return 0;
 }
