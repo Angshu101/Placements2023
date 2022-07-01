@@ -18,7 +18,6 @@ int main(){
     freopen("output.txt", "w", stdout);
 #endif
 int N;
-cout<<"Enter the siz of the array";
 cin>>N;
 int arr[N];
 for(int i=0;i<N;i++){

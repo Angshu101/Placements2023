@@ -23,19 +23,14 @@ int main(){
     // for writing output to output.txt
     freopen("output.txt", "w", stdout);
 #endif
-int N,testcases;
-cin>>testcases;
-while(testcases!=0)
-{
-    cin>>N;
-    int arr[N];
+int N;
+cin>>N;
+int arr[N];
 for(int i=0;i<N;i++){
     cin>>arr[i];
 }
 long long p;
 p=subarray_sum(arr,N);
-cout<<"The max Subarray array Sum is of test case "<<testcases<<" is:-" <<p<<endl;
-testcases--;
-}
+cout<<"The max Subarray array Sum is of test case is:_ " <<p<<endl;
 return 0;
 }

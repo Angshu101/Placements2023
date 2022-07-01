@@ -10,7 +10,7 @@ void segregate_array(int arr[],int size){
     int left = 0, right = size-1;
     while (left < right)
     {
-        /* Increment left index while we see Negative at left */
+        /* Increment left index while we see Negative at left (that means logic is implemented here)*/
         while (arr[left]< 0 && left < right)
             left++;
  
@@ -35,6 +35,12 @@ void swap(int *a, int *b)
     *b = temp;
 }
 int main(){
+#ifndef ONLINE_JUDGE
+    // for getting input from input.txt
+    freopen("input.txt", "r", stdin);
+    // for writing output to output.txt
+    freopen("output.txt", "w", stdout);
+#endif
 int N;
 cout<<"Enter the size of the array";
 cin>>N;

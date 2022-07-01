@@ -1,3 +1,2 @@
-The max Subarray array Sum is of test case 3 is:-9
-The max Subarray array Sum is of test case 2 is:-1974896404
-The max Subarray array Sum is of test case 1 is:-1985518804
+The rotated array is :- 
+-5 -9 -8 -7 8 9 -3 4 
