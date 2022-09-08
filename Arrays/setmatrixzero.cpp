@@ -1,0 +1,3 @@
+// brute force solution of this problem will be first we traverse the matrix then if we get a zero we are gonna traverse it's rows and colums and if we get a number other than zero we set it to -1 and then traverse the matrix again and set all the -1 number as zero the time complexity for this solution is O(N X M )+O(N+M) N X M for traversing the MAtrix and and N+M for traversing each row and each column and space complexity is O(1)//
+
+//other solution is creating a list one is row and other is column now traverse the matrix and set the list to zero both row and coloumn and them traverse the matrix again and find if any of the cordinate list is zero then the number should be zero time complexity O(N X M + N X M ) space complexity is O(N) + O(M)//

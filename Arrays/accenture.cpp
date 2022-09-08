@@ -1,20 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 //Kadane's Algorithm VVIIP
-long long subarray_sum(int arr[],int size){
- long long Sum=0;
- long long max=arr[0];
- for(int i=0;i<size;i++){
-     Sum=0;
-  for(int j=i;j<size;j++){
-      Sum+=arr[j];
-      if(Sum>max)
-      max=Sum;
-  }
- }
- return max+1;
-}
+int subarray_sum(int input1,int input2[]){
+  int 
 
+}
 
 int main(){
 #ifndef ONLINE_JUDGE
@@ -29,8 +19,8 @@ int arr[N];
 for(int i=0;i<N;i++){
     cin>>arr[i];
 }
-long long p;
-p=subarray_sum(arr,N);
+int p;
+p=subarray_sum(N,arr);
 cout<<"The max Subarray array Sum is of test case is:_ " <<p<<endl;
 return 0;
 }
